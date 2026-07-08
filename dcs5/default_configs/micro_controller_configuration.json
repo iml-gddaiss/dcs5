@@ -2,7 +2,7 @@
     "client": {
         "device_name": "BigFinDCS5Micro-3018",
         "mac_address": "80:1F:12:B2:30:18",
-        "marel_ip_address": "192.168.0.202"
+        "marel_ip_address": "10.249.141.5"
     },
     "launch_settings": {
         "output_mode": "length",
@@ -27,8 +27,19 @@
     },
     "output_modes": {
         "swipe_threshold": 5,
-        "segments_limits": [0, 210, 330, 460, 600],
-        "segments_mode": ["length", "top", "bottom", "length"],
+        "segments_limits": [
+            0,
+            210,
+            330,
+            460,
+            600
+        ],
+        "segments_mode": [
+            "length",
+            "top",
+            "bottom",
+            "length"
+        ],
         "mode_reading_profiles": {
             "top": "key",
             "length": "measure",
@@ -38,17 +49,17 @@
     "key_maps": {
         "control_box": {
             "a1": "CHANGE_OUTPUT_MODE",
-            "a2": "BACKLIGHT_UP",
-            "a3": "BACKLIGHT_DOWN"
+            "a2": "WEIGHT",
+            "a3": "MODE"
         },
         "control_box_mode": {
             "a1": null,
-            "a2": null,
-            "a3": null
+            "a2": "BACKLIGHT_UP",
+            "a3": "BACKLIGHT_DOWN"
         },
         "board": {
             "left_arrow": "left",
-            "right_arrow":  "right",
+            "right_arrow": "right",
             "up_arrow": "up",
             "down_arrow": "down",
             "backspace": "backspace",
@@ -103,7 +114,10 @@
             "tab": null,
             "histo": null,
             "summary": "ctrl",
-            "dismiss": ["Y", "enter"],
+            "dismiss": [
+                "Y",
+                "enter"
+            ],
             "1G": "f1",
             "2G": "f2",
             "3G": "f3",
