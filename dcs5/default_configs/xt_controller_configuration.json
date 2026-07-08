@@ -2,7 +2,7 @@
     "client": {
         "device_name": "BigFinDCS5-E5FE",
         "mac_address": "00:06:66:89:E5:FE",
-        "marel_ip_address": "192.168.0.202"
+        "marel_ip_address": "10.249.141.5"
     },
     "launch_settings": {
         "output_mode": "length",
